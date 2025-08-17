@@ -1,0 +1,30 @@
+# Core Data Handling and Analysis
+pandas 
+numpy < 2.0
+scikit-learn
+
+# LLM Interaction and AI Agent Framework
+openai
+langchain
+langchain-openai
+
+# Data Visualization
+matplotlib
+seaborn
+
+# Machine Learning & Evaluation Metrics
+scikit-learn
+
+# Web Scraping and Data Extraction
+python-dotenv
+
+# LLM Evaluation and Testing
+deepeval
+pytest
+
+# Thematic Analysis (Embeddings & Clustering)
+sentence-transformers
+umap-learn
+hdbscan
+
+

@@ -1,0 +1,18 @@
+# System files
+.DS_Store
+
+# IDE / Editor folders
+.vscode/
+.idea/
+.env
+
+# Data files
+data/
+
+# Python cache and environment files
+__pycache__/
+*.pyc.deepeval/
+
+# Ignore files >100MB
+dataset/merged/*.json
+.deepeval/
