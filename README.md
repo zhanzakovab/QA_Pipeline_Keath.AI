@@ -1,14 +1,21 @@
-# KEATH.AI QA Pipeline
-AI Feedback Quality Assurance Pipeline
-This project is an end-to-end system for the automated evaluation of LLM-generated educational feedback. It serves as the basis for a Master's dissertation in Business Analytics at UCL and as a proof-of-concept for a scalable QA system for the EdTech company, Keath.AI.
+# AI Quality Assurance in EdTech: Evaluating Automated Feedback  
 
-The pipeline ingests raw, complex JSON data containing student work, AI-generated feedback, and associated rubrics. It then uses a sophisticated "LLM-as-a-Judge" (GPT-4o) within the DeepEval framework to audit the feedback against a hybrid evaluation framework grounded in pedagogical theory.
+This project develops and evaluates a **scalable AI Quality Assurance (QA) pipeline** for automated feedback systems in education, built in collaboration with **KEATH.AI**. The goal is to ensure that AI-generated feedback is **actionable, specific, rubric-aligned, and factually consistent** — moving beyond grading speed to **feedback quality at scale**.  
 
-**Key Features**
-Robust Data Preprocessing: A Python pipeline using Pandas to clean, normalize, and structure raw, nested JSON data into a test-ready format.
+## What It Does  
+- Processes **8,600+ AI-generated feedback items** across multiple assignments  
+- Evaluates feedback quality using four key metrics:  
+  **Actionability · Specificity · Rubric Alignment · Factual Consistency**  
+- Leverages **Judge LLMs** to systematically assess outputs from **Grader LLMs**  
+- Provides detailed analytics: pass/fail breakdowns, correlations, and failure patterns  
+- Designed to be **extensible** for future QA workflows and multi-LLM evaluation setups  
 
-Hybrid Evaluation Framework: A suite of custom metrics designed to measure both the qualitative and quantitative aspects of AI feedback.
+## Tech Highlights  
+- **Python-based evaluation framework**: `pandas`, `deepeval`, `GEval`, `HallucinationMetric`  
+- Custom **data pipelines** for merging, cleaning, and analyzing ~8.6k records  
+- Advanced **visualizations**: stacked bar charts, correlation heatmaps, bias analysis  
+- Fully reproducible, modular codebase — easy to adapt to other EdTech QA contexts  
 
-LLM-as-a-Judge: Utilizes GPT-4o and the G-Eval prompting technique to score feedback on nuanced, academic criteria.
-
-Automated Testing: Leverages the DeepEval framework to systematically run evaluations, track results, and provide detailed reports.
+## Why It Matters  
+AI feedback systems are becoming integral to learning, but **low-quality feedback can undermine trust and widen learning gaps**.  
+This project demonstrates a **practical, scalable solution**: automating QA for AI-generated feedback while highlighting **systemic biases**, dataset risks, and improvement opportunities.  
