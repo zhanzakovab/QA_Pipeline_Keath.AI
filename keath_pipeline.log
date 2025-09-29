@@ -1,0 +1,38 @@
+2025-09-26 02:08:55,318 - INFO - Starting KEATH data preprocessing...
+2025-09-26 02:08:55,318 - INFO - Input: dataset/keath_dataset_sample.json
+2025-09-26 02:08:55,319 - INFO - Output: dataset/test_preprocessed/sample_data_with_ids.json
+2025-09-26 02:08:55,319 - INFO - Starting data preprocessing pipeline...
+2025-09-26 02:08:55,319 - INFO - Input file: dataset/keath_dataset_sample.json
+2025-09-26 02:08:55,319 - INFO - Output file: dataset/test_preprocessed/sample_data_with_ids.json
+2025-09-26 02:08:55,331 - INFO - Successfully loaded JSON. Found 35 records.
+2025-09-26 02:08:55,344 - INFO - Created DataFrame with 35 records
+2025-09-26 02:08:55,353 - INFO - Uniqueness Check: Found 2 duplicate 'paper_content' entries.
+2025-09-26 02:08:55,397 - INFO - Substantive Content Check: Found 14 records that may be non-substantive.
+2025-09-26 02:08:55,397 - INFO - Details of Flagged Non-Substantive Records
+2025-09-26 02:08:55,397 - INFO -   - Index 13: Huge discrepancy -> Declared: 6327, Actual: 29
+2025-09-26 02:08:55,397 - INFO -   - Index 14: Huge discrepancy -> Declared: 6181, Actual: 28
+2025-09-26 02:08:55,397 - INFO -   - Index 15: Huge discrepancy -> Declared: 3616, Actual: 29
+2025-09-26 02:08:55,397 - INFO -   - Index 16: Huge discrepancy -> Declared: 6564, Actual: 29
+2025-09-26 02:08:55,397 - INFO -   - Index 25: Huge discrepancy -> Declared: 5985, Actual: 31
+2025-09-26 02:08:55,397 - INFO -   - Index 26: Huge discrepancy -> Declared: 6018, Actual: 28
+2025-09-26 02:08:55,397 - INFO -   - Index 27: Huge discrepancy -> Declared: 5960, Actual: 29
+2025-09-26 02:08:55,397 - INFO -   - Index 28: Huge discrepancy -> Declared: 9566, Actual: 29
+2025-09-26 02:08:55,397 - INFO -   - Index 29: Huge discrepancy -> Declared: 6838, Actual: 29
+2025-09-26 02:08:55,397 - INFO -   - Index 30: Huge discrepancy -> Declared: 5648, Actual: 28
+2025-09-26 02:08:55,397 - INFO -   - Index 31: Huge discrepancy -> Declared: 5714, Actual: 33
+2025-09-26 02:08:55,397 - INFO -   - Index 32: Huge discrepancy -> Declared: 6127, Actual: 29
+2025-09-26 02:08:55,398 - INFO -   - Index 33: Huge discrepancy -> Declared: 6203, Actual: 28
+2025-09-26 02:08:55,398 - INFO -   - Index 34: Huge discrepancy -> Declared: 5621, Actual: 28
+2025-09-26 02:08:55,398 - INFO - Filtering Non-Substantive Records
+2025-09-26 02:08:55,406 - INFO - Removed 14 records. Proceeding with 21 records.
+2025-09-26 02:08:55,410 - INFO - Removed 2 duplicate records. 19 unique records remain.
+2025-09-26 02:08:55,411 - INFO - Assigning Final Sequential IDs
+2025-09-26 02:08:55,412 - INFO - Assigned new 'assignment_id' to 19 records.
+2025-09-26 02:08:55,428 - INFO - Final clean data successfully saved to: 'dataset/test_preprocessed/sample_data_with_ids.json'
+2025-09-26 02:08:55,428 - INFO - Data preprocessing pipeline completed successfully!
+2025-09-26 02:08:55,428 - INFO - Success! Processed 19 records.
+2025-09-26 02:08:55,429 - INFO - Output saved to: dataset/test_preprocessed/sample_data_with_ids.json
+2025-09-26 02:08:55,429 - INFO - Next steps:
+2025-09-26 02:08:55,429 - INFO -    1. Test with sample data first
+2025-09-26 02:08:55,429 - INFO -    2. Run evaluations: python scripts/test_evaluation.py
+2025-09-26 02:08:55,429 - INFO -    3. Merge results: python scripts/run_merge.py
